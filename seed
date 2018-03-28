@@ -1,0 +1,4 @@
+SQLite version 3.19.3 2017-06-08 14:26:16
+Enter ".help" for usage hints.
+sqlite> select * from posts^C[C[C[C[C[C[C[C[C[K
+sqlite> [Ksqlite> 

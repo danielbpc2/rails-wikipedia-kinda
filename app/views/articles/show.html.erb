@@ -1,2 +1,16 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="container">
+  <%if flash[:notice] %>
+    <div class="alert alert-info">
+      <%= flash[:notice] %>
+      <button class="close" data-dismiss="alert">×</button>
+      </div>
+  <% end %>
+  <h1><%= @article.title%>
+    <%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_article_path(@article) %>
+    <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, article_path(@article),
+          method: :delete,
+          data: { confirm: "Are you sure?" } %>
+  </h1>
+  <hr>
+  <p><%= @article.content %></p>
+  </div>

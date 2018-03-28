@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #f8f8f8;
+  border: solid 1px rgb(220,220,220);
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  .logo {
+    font-weight: bolder;
+  }
+  a {
+    color: #777;
+    text-decoration: none;
+  }
+}
