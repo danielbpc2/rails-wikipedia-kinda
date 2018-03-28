@@ -6,10 +6,11 @@
       </div>
   <% end %>
   <h1><%= @article.title%>
-    <%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_article_path(@article) %>
-    <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, article_path(@article),
-          method: :delete,
-          data: { confirm: "Are you sure?" } %>
+  <small>
+      <%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_article_path(@article) %>
+      <%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></small>
   </h1>
   <hr>
   <p><%= @article.content %></p>
